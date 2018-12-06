@@ -457,71 +457,71 @@ loop_text:		beq 	$s0, $t7, exit			# when $s0 = $s1, branch to exit
 			syscall					# print tab
 			
 			li	$t9, 2				# $t9 = 2
-			beq	$t0, $t9, format1		# branch to format1 if opcode is 2
+			beq	$t0, $t9, pattern1		# branch to pattern1 if opcode is 2
 			li	$t9, 3				# $t9 = 3
-			beq	$t0, $t9, format1		# branch to format1 if opcode is 3
+			beq	$t0, $t9, pattern1		# branch to pattern1 if opcode is 3
 			
 			li	$t9, 4				# $t9 = 4	
-			beq	$t0, $t9, format2		# branch to format2 if opcode is 4
+			beq	$t0, $t9, pattern2		# branch to pattern2 if opcode is 4
 			li	$t9, 5				# $t9 = 5
-			beq	$t0, $t9, format2		# branch to format2 if opcode is 5
+			beq	$t0, $t9, pattern2		# branch to pattern2 if opcode is 5
 			
 			li	$t9, 6				# $t9 = 6 
-			beq	$t0, $t9, format3		# branch to format3 if opcode is 6
+			beq	$t0, $t9, pattern3		# branch to pattern3 if opcode is 6
 			li	$t9, 7				# $t9 = 7
-			beq	$t0, $t9, format3		# branch to format3 if opcode is 7
+			beq	$t0, $t9, pattern3		# branch to pattern3 if opcode is 7
 			
 			li	$t9, 8				# $t9 = 8
-			beq	$t0, $t9, format4		# branch to format4 if opcode is 8
+			beq	$t0, $t9, pattern4		# branch to pattern4 if opcode is 8
 			li	$t9, 9				# $t9 = 9
-			beq	$t0, $t9, format4		# branch to format4 if opcode is 9
+			beq	$t0, $t9, pattern4		# branch to pattern4 if opcode is 9
 			li	$t9, 10				# $t9 = 10
-			beq	$t0, $t9, format4		# branch to format4 if opcode is 10
+			beq	$t0, $t9, pattern4		# branch to pattern4 if opcode is 10
 			li	$t9, 11				# $t9 = 11
-			beq	$t0, $t9, format4		# branch to format4 if opcode is 11
+			beq	$t0, $t9, pattern4		# branch to pattern4 if opcode is 11
 			li	$t9, 12				# $t9 = 12
-			beq	$t0, $t9, format4		# branch to format4 if opcode is 12
+			beq	$t0, $t9, pattern4		# branch to pattern4 if opcode is 12
 			li	$t9, 13				# $t9 = 13
-			beq	$t0, $t9, format4		# branch to format4 if opcode is 13
+			beq	$t0, $t9, pattern4		# branch to pattern4 if opcode is 13
 			li	$t9, 14				# $t9 = 14
-			beq	$t0, $t9, format4		# branch to format4 if opcode is 14		
+			beq	$t0, $t9, pattern4		# branch to pattern4 if opcode is 14		
 			
 			li	$t9, 15				# $t9 = 15
-			beq	$t0, $t9, format5		# branch to format5 if opcode is 15
+			beq	$t0, $t9, pattern5		# branch to pattern5 if opcode is 15
 			
 			li	$t9, 32				# $t9 = 32
-			beq	$t0, $t9, format6		# branch to format6 if opcode is 32
+			beq	$t0, $t9, pattern6		# branch to pattern6 if opcode is 32
 			li	$t9, 33				# $t9 = 33
-			beq	$t0, $t9, format6		# branch to format6 if opcode is 33
+			beq	$t0, $t9, pattern6		# branch to pattern6 if opcode is 33
 			li	$t9, 34				# $t9 = 34
-			beq	$t0, $t9, format6		# branch to format6 if opcode is 34
+			beq	$t0, $t9, pattern6		# branch to pattern6 if opcode is 34
 			li	$t9, 35				# $t9 = 35
-			beq	$t0, $t9, format6		# branch to format6 if opcode is 35
+			beq	$t0, $t9, pattern6		# branch to pattern6 if opcode is 35
 			li	$t9, 36				# $t9 = 36
-			beq	$t0, $t9, format6		# branch to format6 if opcode is 36
+			beq	$t0, $t9, pattern6		# branch to pattern6 if opcode is 36
 			li	$t9, 37				# $t9 = 37
-			beq	$t0, $t9, format6		# branch to format6 if opcode is 37
+			beq	$t0, $t9, pattern6		# branch to pattern6 if opcode is 37
 			li	$t9, 38				# $t9 = 38
-			beq	$t0, $t9, format6		# branch to format6 if opcode is 38
+			beq	$t0, $t9, pattern6		# branch to pattern6 if opcode is 38
 			li	$t9, 40				# $t9 = 40
-			beq	$t0, $t9, format6		# branch to format6 if opcode is 40
+			beq	$t0, $t9, pattern6		# branch to pattern6 if opcode is 40
 			li	$t9, 41				# $t9 = 41
-			beq	$t0, $t9, format6		# branch to format6 if opcode is 41
+			beq	$t0, $t9, pattern6		# branch to pattern6 if opcode is 41
 			li	$t9, 42				# $t9 = 42
-			beq	$t0, $t9, format6		# branch to format6 if opcode is 42
+			beq	$t0, $t9, pattern6		# branch to pattern6 if opcode is 42
 			li	$t9, 43				# $t9 = 43
-			beq	$t0, $t9, format6		# branch to format6 if opcode is 43
+			beq	$t0, $t9, pattern6		# branch to pattern6 if opcode is 43
 			li	$t9, 46				# $t9 = 46
-			beq	$t0, $t9, format6		# branch to format6 if opcode is 46
+			beq	$t0, $t9, pattern6		# branch to pattern6 if opcode is 46
 			li	$t9, 48				# $t9 = 48
-			beq	$t0, $t9, format6		# branch to format6 if opcode is 48
+			beq	$t0, $t9, pattern6		# branch to pattern6 if opcode is 48
 			li	$t9, 56				# $t9 = 56
-			beq	$t0, $t9, format6		# branch to format6 if opcode is 56
+			beq	$t0, $t9, pattern6		# branch to pattern6 if opcode is 56
 			
 			j	loop_increment			# jump to loop_increment
 			
-####################### format1: op target 
-format1:		la	$a0, letterL			# load address of "L"
+####################### pattern1: op target 
+pattern1:		la	$a0, letterL			# load address of "L"
 			li	$v0, 4				# set syscall to print string
 			syscall					# print "L"
 
@@ -532,8 +532,8 @@ format1:		la	$a0, letterL			# load address of "L"
 			
 			j	loop_increment			# jump to loop_increment								
 
-####################### format2: op rs, rt, target																											
-format2:		move	$a0, $t1			# $a0 = $t1
+####################### pattern2: op rs, rt, target																											
+pattern2:		move	$a0, $t1			# $a0 = $t1
 			jal	print_rs			# function call to print rs register
 			
 			jal	print_comma			# function call to print comma and space
@@ -548,8 +548,8 @@ format2:		move	$a0, $t1			# $a0 = $t1
 			
 			j	loop_increment			# jump to loop_increment
 
-######################  format3: op rs, target
-format3:		move	$a0, $t1			# $a0 = $t1
+######################  pattern3: op rs, target
+pattern3:		move	$a0, $t1			# $a0 = $t1
 			jal	print_rs			# function call to print rs register
 			
 			jal	print_comma			# function call to print comma and space
@@ -559,8 +559,8 @@ format3:		move	$a0, $t1			# $a0 = $t1
 			
 			j	loop_increment			# jump to loop_increment
 			
-######################  format4: op rt, rs, imm 
-format4:		move	$a0, $t1			# $a0 = $t1
+######################  pattern4: op rt, rs, imm 
+pattern4:		move	$a0, $t1			# $a0 = $t1
 			jal	print_rt			# function call to print rt register
 			
 			jal	print_comma			# function call to print comma and space
@@ -575,8 +575,8 @@ format4:		move	$a0, $t1			# $a0 = $t1
 			
 			j	loop_increment			# jump to loop_increment
 				
-####################### format5: op rt, imm
-format5:		move	$a0, $t1			# $a0 = $t1
+####################### pattern5: op rt, imm
+pattern5:		move	$a0, $t1			# $a0 = $t1
 			jal	print_rt			# function call to print rt register
 			
 			jal	print_comma			# function call to print comma and space
@@ -587,8 +587,8 @@ format5:		move	$a0, $t1			# $a0 = $t1
 			
 			j	loop_increment			# jump to loop_increment
 			
-####################### format6: op rt, imm(rs)
-format6:		move	$a0, $t1			# $a0 = $t1
+####################### pattern6: op rt, imm(rs)
+pattern6:		move	$a0, $t1			# $a0 = $t1
 			jal	print_rt			# function call to print rt register
 			
 			jal	print_comma			# function call to print comma and space
@@ -622,76 +622,76 @@ Rtype:			andi	$t0, $t1, 63			# t0 gets the function code
 			syscall					# print tab
 			
 			li	$t9, 10				# $t9 = 10
-			beq	$t0, $t9, format7		# branch to format7 if funct code is 10	
+			beq	$t0, $t9, pattern7		# branch to pattern7 if funct code is 10	
 			li	$t9, 11				# $t9 = 11
-			beq	$t0, $t9, format7		# branch to format7 if funct code is 11
+			beq	$t0, $t9, pattern7		# branch to pattern7 if funct code is 11
 			li	$t9, 32				# $t9 = 32
-			beq	$t0, $t9, format7		# branch to format7 if funct code is 32
+			beq	$t0, $t9, pattern7		# branch to pattern7 if funct code is 32
 			li	$t9, 33				# $t9 = 33
-			beq	$t0, $t9, format7		# branch to format7 if funct code is 33
+			beq	$t0, $t9, pattern7		# branch to pattern7 if funct code is 33
 			li	$t9, 34				# $t9 = 34
-			beq	$t0, $t9, format7		# branch to format7 if funct code is 34
+			beq	$t0, $t9, pattern7		# branch to pattern7 if funct code is 34
 			li	$t9, 35				# $t9 = 35
-			beq	$t0, $t9, format7		# branch to format7 if funct code is 35
+			beq	$t0, $t9, pattern7		# branch to pattern7 if funct code is 35
 			li	$t9, 36				# $t9 = 36
-			beq	$t0, $t9, format7		# branch to format7 if funct code is 36
+			beq	$t0, $t9, pattern7		# branch to pattern7 if funct code is 36
 			li	$t9, 37				# $t9 = 37
-			beq	$t0, $t9, format7		# branch to format7 if funct code is 37
+			beq	$t0, $t9, pattern7		# branch to pattern7 if funct code is 37
 			li	$t9, 38				# $t9 = 38
-			beq	$t0, $t9, format7		# branch to format7 if funct code is 38
+			beq	$t0, $t9, pattern7		# branch to pattern7 if funct code is 38
 			li	$t9, 39				# $t9 = 39
-			beq	$t0, $t9, format7		# branch to format7 if funct code is 39
+			beq	$t0, $t9, pattern7		# branch to pattern7 if funct code is 39
 			li	$t9, 42				# $t9 = 42
-			beq	$t0, $t9, format7		# branch to format7 if funct code is 42
+			beq	$t0, $t9, pattern7		# branch to pattern7 if funct code is 42
 			li	$t9, 43				# $t9 = 43
-			beq	$t0, $t9, format7		# branch to format7 if funct code is 43
+			beq	$t0, $t9, pattern7		# branch to pattern7 if funct code is 43
 			
 			li	$t9, 16				# $t9 = 16
-			beq	$t0, $t9, format8		# branch to format7 if funct code is 16
+			beq	$t0, $t9, pattern8		# branch to pattern7 if funct code is 16
 			li	$t9, 18				# $t9 = 18
-			beq	$t0, $t9, format8		# branch to format7 if funct code is 18
+			beq	$t0, $t9, pattern8		# branch to pattern7 if funct code is 18
 			
 			li	$t9, 0				# $t9 = 0
-			beq	$t0, $t9, format9		# branch to format7 if funct code is 0
+			beq	$t0, $t9, pattern9		# branch to pattern7 if funct code is 0
 			li	$t9, 2				# $t9 = 2
-			beq	$t0, $t9, format9		# branch to format7 if funct code is 2
+			beq	$t0, $t9, pattern9		# branch to pattern7 if funct code is 2
 			li	$t9, 3				# $t9 = 3
-			beq	$t0, $t9, format9		# branch to format7 if funct code is 3
+			beq	$t0, $t9, pattern9		# branch to pattern7 if funct code is 3
 			
 			li	$t9, 8				# $t9 = 8
-			beq	$t0, $t9, format10		# branch to format7 if funct code is 8
+			beq	$t0, $t9, pattern10		# branch to pattern7 if funct code is 8
 			li	$t9, 17				# $t9 = 17
-			beq	$t0, $t9, format10		# branch to format7 if funct code is 17
+			beq	$t0, $t9, pattern10		# branch to pattern7 if funct code is 17
 			li	$t9, 19				# $t9 = 19
-			beq	$t0, $t9, format10		# branch to format7 if funct code is 19
+			beq	$t0, $t9, pattern10		# branch to pattern7 if funct code is 19
 			
 			li	$t9, 9				# $t9 = 9
-			beq	$t0, $t9, format11		# branch to format7 if funct code is 9
+			beq	$t0, $t9, pattern11		# branch to pattern7 if funct code is 9
 			li	$t9, 24				# $t9 = 24
-			beq	$t0, $t9, format11		# branch to format7 if funct code is 24
+			beq	$t0, $t9, pattern11		# branch to pattern7 if funct code is 24
 			li	$t9, 25				# $t9 = 25
-			beq	$t0, $t9, format11		# branch to format7 if funct code is 25
+			beq	$t0, $t9, pattern11		# branch to pattern7 if funct code is 25
 			li	$t9, 26				# $t9 = 26
-			beq	$t0, $t9, format11		# branch to format7 if funct code is 26
+			beq	$t0, $t9, pattern11		# branch to pattern7 if funct code is 26
 			li	$t9, 27				# $t9 = 27
-			beq	$t0, $t9, format11		# branch to format7 if funct code is 27
+			beq	$t0, $t9, pattern11		# branch to pattern7 if funct code is 27
 			li	$t9, 48				# $t9 = 48
-			beq	$t0, $t9, format11		# branch to format7 if funct code is 48
+			beq	$t0, $t9, pattern11		# branch to pattern7 if funct code is 48
 			li	$t9, 49				# $t9 = 49
-			beq	$t0, $t9, format11		# branch to format7 if funct code is 49
+			beq	$t0, $t9, pattern11		# branch to pattern7 if funct code is 49
 			li	$t9, 50				# $t9 = 50
-			beq	$t0, $t9, format11		# branch to format7 if funct code is 50
+			beq	$t0, $t9, pattern11		# branch to pattern7 if funct code is 50
 			li	$t9, 51				# $t9 = 51
-			beq	$t0, $t9, format11		# branch to format7 if funct code is 51
+			beq	$t0, $t9, pattern11		# branch to pattern7 if funct code is 51
 			li	$t9, 52				# $t9 = 52
-			beq	$t0, $t9, format11		# branch to format7 if funct code is 52
+			beq	$t0, $t9, pattern11		# branch to pattern7 if funct code is 52
 			li	$t9, 54				# $t9 = 54
-			beq	$t0, $t9, format11		# branch to format7 if funct code is 54
+			beq	$t0, $t9, pattern11		# branch to pattern7 if funct code is 54
 			
 			j	loop_increment			# jump to loop_increment
 			
-####################### format7: op rd, rs, rt
-format7:		move	$a0, $t1			# $a0 = $t1
+####################### pattern7: op rd, rs, rt
+pattern7:		move	$a0, $t1			# $a0 = $t1
 			jal	print_rd			# function call to print rd register
 			
 			jal	print_comma			# function call to print comma and space
@@ -706,14 +706,14 @@ format7:		move	$a0, $t1			# $a0 = $t1
 			
 			j	loop_increment			# jump to loop_increment
 			
-####################### format8: op rd
-format8:		move	$a0, $t1			# $a0 = $t1
+####################### pattern8: op rd
+pattern8:		move	$a0, $t1			# $a0 = $t1
 			jal	print_rd			# function call to print rd register
 			
 			j	loop_increment			# jump to loop_increment
 
-####################### format9: op rd, rt, shamt
-format9:		move	$a0, $t1			# $a0 = $t1
+####################### pattern9: op rd, rt, shamt
+pattern9:		move	$a0, $t1			# $a0 = $t1
 			jal	print_rd			# function call to print rd register
 			
 			jal	print_comma			# function call to print comma and space
@@ -728,14 +728,14 @@ format9:		move	$a0, $t1			# $a0 = $t1
 			
 			j	loop_increment			# jump to loop_increment
 
-####################### format10: op rs
-format10:		move	$a0, $t1			# $a0 = $t1
+####################### pattern10: op rs
+pattern10:		move	$a0, $t1			# $a0 = $t1
 			jal	print_rs			# function call to print rs register
 			
 			j	loop_increment			# jump to loop_increment
 
-####################### format11: op rs, rt
-format11:		move	$a0, $t1			# $a0 = $t1
+####################### pattern11: op rs, rt
+pattern11:		move	$a0, $t1			# $a0 = $t1
 			jal	print_rs			# function call to print rs register
 			
 			jal	print_comma			# function call to print comma and space
