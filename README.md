@@ -1,4 +1,4 @@
-# Build a Disassembler of Machine Code with MIPS R2000
+# Build a Disassembler with MIPS R2000
 
 Computer Architecture course project. 
 
